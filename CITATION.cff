@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: 'Diffusers: State-of-the-art diffusion models'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+authors:
+  - given-names: Hancheng
+    family-names: Ye
+  - given-names: Jiakang
+    family-names: Yuan
+  - given-names: Renqiu
+    family-names: Xia
+  - given-names: Xiangchao
+    family-names: Yan
+  - given-names: Tao
+    family-names: Chen
+  - given-names: Junchi
+    family-names: Yan
+  - given-names: Botian
+    family-names: Shi
+  - given-names: Bo
+    family-names: Zhang
+repository-code: 'https://github.com/UniModal4Reasoning/AdaptiveDiffusion'
+keywords:
+  - deep-learning
+  - pytorch
+  - image-generation
+  - video-generation
+  - diffusion
+  - text2image
+  - image2image
+  - score-based-generative-modeling
+  - stable-diffusion
+  - stable-diffusion-diffusers
+  - adaptive diffusion
+  - differential estimator
+license: Apache-2.0
+version: 0.12.1
