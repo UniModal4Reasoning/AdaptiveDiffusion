@@ -2,13 +2,14 @@
 [![GitHub issues](https://img.shields.io/github/issues/UniModal4Reasoning/AdaptiveDiffusion)](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/issues)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/pulls)
 
+<div align="center">
 <h1 style="text-align: center; font-size: 2.5rem; font-weight: bolders">
 NeurIPS-2024: Training-free Adaptive Diffusion with Bounded Difference Approximation Strategy
 </h1>
 
 
-[[Paper]]() [[ Project page ]](https://jiakangyuan.github.io/AdaptiveDiffusion-project-page/)
-
+<font size=4>[[Paper]]()</font> &nbsp; &nbsp;<font size=4>[[ Project page ]](https://jiakangyuan.github.io/AdaptiveDiffusion-project-page/)</font>
+</div>
 
 <p align="center">
     <br>
