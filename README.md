@@ -1,4 +1,4 @@
-[![arXiv](https://img.shields.io/badge/arXiv-2403.15835-b31b1b.svg)](https://arxiv.org/abs/2403.11923)
+[![arXiv](https://img.shields.io/badge/arXiv-2410.09873-b31b1b.svg)](https://arxiv.org/abs/2410.09873)
 [![GitHub issues](https://img.shields.io/github/issues/UniModal4Reasoning/AdaptiveDiffusion)](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/issues)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/pulls)
 
