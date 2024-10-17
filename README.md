@@ -18,7 +18,7 @@ NeurIPS-2024: Training-free Adaptive Diffusion with Bounded Difference Approxima
 <p>
 
 ## Introduction
-This is the up-to-date official implementation of AdaptiveDiffusion in the paper, [**Training-free Adaptive Diffusion with Bounded Difference Approximation Strategy**](https://arxiv.org/abs/2303.11923). AdaptiveDiffusion is a novel adaptive inference paradigm containing a third-order latent differential estimator to determine whether to reuse the noise prediction from previous timesteps for the denoising of the current timestep. The developed skipping strategy adaptively approximates the optimal skipping strategy for various prompts based on the third-order latent differential value.
+This is the up-to-date official implementation of AdaptiveDiffusion in the paper, [**Training-free Adaptive Diffusion with Bounded Difference Approximation Strategy**](https://arxiv.org/abs/2410.09873). AdaptiveDiffusion is a novel adaptive inference paradigm containing a third-order latent differential estimator to determine whether to reuse the noise prediction from previous timesteps for the denoising of the current timestep. The developed skipping strategy adaptively approximates the optimal skipping strategy for various prompts based on the third-order latent differential value.
 
 AdaptiveDiffusion offers three core components:
 
