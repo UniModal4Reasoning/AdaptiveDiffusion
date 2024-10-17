@@ -22,9 +22,9 @@ This is the up-to-date official implementation of AdaptiveDiffusion in the paper
 
 AdaptiveDiffusion offers three core components:
 
-- Training-free adaptive diffusion acceleration [pipelines](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/main/examples/AdaptiveDiffusion/acceleration/sparse_pipeline.py) from the step number reduction of noise predictions that makes different skipping paths for different prompts.
+- Training-free adaptive diffusion acceleration [pipelines](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/acceleration/sparse_pipeline.py) from the step number reduction of noise predictions that makes different skipping paths for different prompts.
 - Unified skipping strategy for both image and video generation models.
-- Interchangeable noise [schedulers](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/main/examples/AdaptiveDiffusion/generate.py) for different diffusion speeds and output quality.
+- Interchangeable noise [schedulers](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/generate.py) for different diffusion speeds and output quality.
 
 ## Installation
 
@@ -39,10 +39,10 @@ pip install cleanfid calculate_fvd
 Thanks to the unified inference pipelines in [diffusers](https://github.com/huggingface/diffusers), it is easy to deploy the third-order estimator on various diffusion pipelines to achieve adaptive diffusion.
 
 ### Step One
-Select the target pipeline that you attempt to accelerate. For the comparison with original diffusion results, you can copy the [pipeline](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/main/src/diffusers/pipelines/) classes to [sparse_pipeline](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/main/examples/AdaptiveDiffusion/acceleration/sparse_pipeline.py).
+Select the target pipeline that you attempt to accelerate. For the comparison with original diffusion results, you can copy the [pipeline](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/src/diffusers/pipelines/) classes to [sparse_pipeline](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/acceleration/sparse_pipeline.py).
 
 ### Step Two
-Modify the pipeline you just copied into the [sparse_pipeline](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/main/examples/AdaptiveDiffusion/acceleration/sparse_pipeline.py). There are four places that need modification.
+Modify the pipeline you just copied into the [sparse_pipeline](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/acceleration/sparse_pipeline.py). There are four places that need modification.
 
 1. Pipeline Initialization
 ```python
@@ -142,7 +142,7 @@ pipeline.to("cuda")
 pipeline("An image of a squirrel in Picasso style").images[0]
 ```
 ### Evaluation
-To evaluate the generation quality of AdaptiveDiffusion, we follow [Distrifuser](https://github.com/mit-han-lab/distrifuser) to evaluate the generation similarity between the original and our adaptive diffusion model. After you generate all the images, you can use our script [`compute_metrics_image.py`](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/main/examples/AdaptiveDiffusion/compute_metrics_image.py) and [`compute_metrics_video.py`](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/main/examples/AdaptiveDiffusion/compute_metrics_video.py) to calculate PSNR, LPIPS and FID. The usage is
+To evaluate the generation quality of AdaptiveDiffusion, we follow [Distrifuser](https://github.com/mit-han-lab/distrifuser) to evaluate the generation similarity between the original and our adaptive diffusion model. After you generate all the images, you can use our script [`compute_metrics_image.py`](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/compute_metrics_image.py) and [`compute_metrics_video.py`](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/compute_metrics_video.py) to calculate PSNR, LPIPS and FID. The usage is
 ```python
 python scripts/compute_metrics.py --input_root0 $IMAGE_ROOT0 --input_root1 $IMAGE_ROOT1
 ```
