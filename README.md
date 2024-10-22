@@ -31,7 +31,7 @@ AdaptiveDiffusion offers three core components:
 Please follow the [installation](https://github.com/huggingface/diffusers/blob/main/README.md) to complete the installation. If the evaluation is required, `cleanfid` and `calculate_fvd` should be installed for images and videos, respectively.
 
 ```
-pip install cleanfid calculate_fvd
+pip install torchmetrics cleanfid calculate_fvd
 ```
 
 ## Quickstart
