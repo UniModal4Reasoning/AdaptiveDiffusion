@@ -4,7 +4,7 @@
 
 <div align="center">
 <h1 style="text-align: center; font-size: 2.5rem; font-weight: bolders">
-NeurIPS-2024: Training-free Adaptive Diffusion with Bounded Difference Approximation Strategy
+NeurIPS-2024: Noise Prediction Can Be Adaptively Skipped for Different Prompts Without Training!
 </h1>
 
 
