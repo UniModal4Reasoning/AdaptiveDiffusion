@@ -144,9 +144,16 @@ pipeline("An image of a squirrel in Picasso style").images[0]
 ### Evaluation
 To evaluate the generation quality of AdaptiveDiffusion, we follow [Distrifuser](https://github.com/mit-han-lab/distrifuser) to evaluate the generation similarity between the original and our adaptive diffusion model. After you generate all the images, you can use our script [`compute_metrics_image.py`](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/compute_metrics_image.py) and [`compute_metrics_video.py`](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/compute_metrics_video.py) to calculate PSNR, LPIPS and FID. The usage is
 ```python
-python scripts/compute_metrics.py --input_root0 $IMAGE_ROOT0 --input_root1 $IMAGE_ROOT1
+python scripts/compute_metrics_image.py --input_root0 $IMAGE_ROOT0 --input_root1 $IMAGE_ROOT1
 ```
 where `$IMAGE_ROOT0` and `$IMAGE_ROOT1` are paths to the image folders you are trying to compare.
+
+### Evaluation on AIGCBench
+For the evaluation on the image-to-video generation task, we randomly select 100 samples from the validation set of [AIGCBench](https://arxiv.org/abs/2401.01651). The sample list is provided in [Huggingface](HankYe/Sampled_AIGCBench_text2image_ar_0.625). After generating all the videos by [`generate_video.py`](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/generate_video.py), you can use our script [`compute_metrics_video.py`](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/compute_metrics_video.py) to calculate PSNR, LPIPS and FVD. The usage is 
+```python
+python scripts/compute_metrics_video.py --input_root0 $VIDEO_ROOT0 --input_root1 $VIDEO_ROOT1
+```
+where `$VIDEO_ROOT0` and `$VIDEO_ROOT1` are paths to the video folders you are trying to compare.
 
 ## Demo
 
