@@ -8,7 +8,7 @@ NeurIPS-2024: Training-free Adaptive Diffusion with Bounded Difference Approxima
 </h1>
 
 
-<font size=4>[[Paper]](https://arxiv.org/pdf/2410.09873)</font> &nbsp; &nbsp;<font size=4>[[Project page]](https://jiakangyuan.github.io/AdaptiveDiffusion-project-page/)</font>
+<font size=4>[[Paper]](https://arxiv.org/pdf/2410.09873)</font> &nbsp; &nbsp;<font size=4>[[Project page]](https://jiakangyuan.github.io/AdaptiveDiffusion-project-page/)</font> &nbsp;&nbsp;<font size=4>[[Huggingface]](https://huggingface.co/datasets/HankYe/Sampled_AIGCBench_text2image_ar_0.625)</font>
 </div>
 
 <p align="center">
