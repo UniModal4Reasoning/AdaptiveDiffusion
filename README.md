@@ -149,7 +149,7 @@ python scripts/compute_metrics_image.py --input_root0 $IMAGE_ROOT0 --input_root1
 where `$IMAGE_ROOT0` and `$IMAGE_ROOT1` are paths to the image folders you are trying to compare.
 
 ### Evaluation on AIGCBench
-For the evaluation on the image-to-video generation task, we randomly select 100 samples from the validation set of [AIGCBench](https://arxiv.org/abs/2401.01651). The sample list is provided in [Huggingface](HankYe/Sampled_AIGCBench_text2image_ar_0.625). After generating all the videos by [`generate_video.py`](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/generate_video.py), you can use our script [`compute_metrics_video.py`](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/compute_metrics_video.py) to calculate PSNR, LPIPS and FVD. The usage is 
+For the evaluation on the image-to-video generation task, we randomly select 100 samples from the validation set of [AIGCBench](https://arxiv.org/abs/2401.01651). The sample list is provided in [Huggingface](https://huggingface.co/datasets/HankYe/Sampled_AIGCBench_text2image_ar_0.625). After generating all the videos by [`generate_video.py`](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/generate_video.py), you can use our script [`compute_metrics_video.py`](https://github.com/UniModal4Reasoning/AdaptiveDiffusion/blob/master/examples/AdaptiveDiffusion/compute_metrics_video.py) to calculate PSNR, LPIPS and FVD. The usage is 
 ```python
 python scripts/compute_metrics_video.py --input_root0 $VIDEO_ROOT0 --input_root1 $VIDEO_ROOT1
 ```
@@ -184,7 +184,7 @@ Then, open the URL displayed in the terminal (For example, http://127.0.0.1:7860
 
 
 ## Acknowledgements
-We greatly acknowledge the authors of *Distrifuser*, *Torchsparse*, and *Diffusers* for their open-source codes. Visit the following links to access more contributions of them.
+We greatly acknowledge the authors of *Distrifuser*, *Torchsparse*, and *Diffusers* for their open-source codes. Visit the following links to access their more contributions.
 
 - [Distrifuser](https://github.com/mit-han-lab/distrifuser)
 - [Torchsparse](https://github.com/mit-han-lab/torchsparse)
