@@ -161,7 +161,7 @@ You can also try our demo by
 ```python
 cd examples/AdaptiveDiffusion && python demo.py
 ```
-Then, open the URL displayed in the terminal (For example, http://127.0.0.1:7860) and you can change the `model`, `seed`, `threshold`, and so on in the WebUI.
+Then, open the URL displayed in the terminal (For example, http://127.0.0.1:7860) and you can change the `model`, `seed`, `threshold`, and so on in the WebUI. The additional package required for the demo is `gradio`, and you can use `pip install gradio` to install it.
 
 <p align="center">
     <br>
